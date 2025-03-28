@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fetch Employee</title>
+</head>
+<body>
+    <h1>Fetch Employee By ID</h1>
+    <form action="/fetch" method="post">
+        Employee ID: <input type="number" name="id"><br>
+        <button type="submit">Fetch</button>
+    </form>
+    <p th:if="${employee != null}" th:text="'Employee Name: ' + ${employee.name}"></p>
+    <a href="/">Back</a>
+</body>
+</html>

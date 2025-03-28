@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Employees</title>
+</head>
+<body>
+    <h1>All Employees</h1>
+    <ul>
+        <li th:each="employee : ${employees}">
+            <p th:text="'ID: ' + ${employee.id} + ', Name: ' + ${employee.name}"></p>
+        </li>
+    </ul>
+    <a href="/">Back</a>
+</body>
+</html>
